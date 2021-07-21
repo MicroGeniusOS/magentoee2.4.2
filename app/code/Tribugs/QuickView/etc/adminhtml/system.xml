@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!--
+ * Tribugs_QuickView
+ *
+ * @category    Tribugs
+ * @package     Tribugs_QuickView
+ * @Date        07/2021
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ * @author      @diazwatson
+ */-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="tribugs" translate="label" sortOrder="105">
+            <label>Tribugs Extensions</label>
+        </tab>
+        <section id="tribugs_quickview" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>QuickView</label>
+            <tab>tribugs</tab>
+            <resource>tribugs_QuickView::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>General</label>
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment><![CDATA[Enable or disable QuickView.]]></comment>
+                </field>
+                <field id="btn_text" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Quick View Button Text</label>
+                    <comment><![CDATA[Text shown in quick view button.]]></comment>
+                </field>
+                
+            </group>
+        </section>
+    </system>
+</config>

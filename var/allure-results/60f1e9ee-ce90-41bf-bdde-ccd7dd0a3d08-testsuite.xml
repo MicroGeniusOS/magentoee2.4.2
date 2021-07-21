@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alr:test-suite xmlns:alr="urn:model.allure.qatools.yandex.ru" start="1626631206477" stop="1626631206496" version="1.4.0">
+  <name>Trybugs\CompanyAddress\Test\Unit\Model\Rewrite\CustomerTest</name>
+  <test-cases>
+    <test-case start="1626631206478" stop="1626631206491" status="passed">
+      <name>testValidateNewCustomerWithNewCustomerAddress</name>
+    </test-case>
+    <test-case start="1626631206491" stop="1626631206492" status="passed">
+      <name>testValidateNewCustomerWithExistingCustomerAddress</name>
+    </test-case>
+    <test-case start="1626631206493" stop="1626631206493" status="passed">
+      <name>testValidateExistingCustomerWithNewCustomerAddress</name>
+    </test-case>
+    <test-case start="1626631206493" stop="1626631206493" status="passed">
+      <name>testValidateExistingCustomerWithRelevantCustomerAddress</name>
+    </test-case>
+    <test-case start="1626631206493" stop="1626631206493" status="passed">
+      <name>testValidateExistingCustomerAddressWithNotRelevantCustomer</name>
+    </test-case>
+    <test-case start="1626631206493" stop="1626631206495" status="passed">
+      <name>testValidateExistingCustomerWithQuoteAddress</name>
+    </test-case>
+  </test-cases>
+</alr:test-suite>

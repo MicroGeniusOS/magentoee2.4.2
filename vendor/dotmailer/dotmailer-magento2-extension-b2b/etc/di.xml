@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Dotdigitalgroup\Email\Model\Connector\Datafield">
+        <plugin name="ddg_b2b_data_field_plugin"
+                type="Dotdigitalgroup\B2b\Plugin\DataFieldPlugin" sortOrder="1"/>
+    </type>
+    <type name="Dotdigitalgroup\Email\Model\Apiconnector\CustomerDataFieldProvider">
+        <plugin name="ddg_b2b_customer_datafield_provider_plugin"
+                type="Dotdigitalgroup\B2b\Plugin\CustomerDataFieldProviderPlugin"/>
+    </type>
+    <type name="Dotdigitalgroup\Email\Model\Apiconnector\Customer">
+        <plugin name="ddg_b2b_customer_plugin"
+                type="Dotdigitalgroup\B2b\Plugin\CustomerPlugin"/>
+    </type>
+    <type name="Dotdigitalgroup\Email\Model\Sync\Catalog\StoreCatalogSyncer">
+        <plugin name="ddg_b2b_store_catalog_syncer_plugin"
+                type="Dotdigitalgroup\B2b\Plugin\StoreCatalogSyncerPlugin"/>
+    </type>
+    <type name="Dotdigitalgroup\Email\Model\Product\TierPriceFinder">
+        <plugin name="ddg_b2b_price_finder_plugin"
+                type="Dotdigitalgroup\B2b\Plugin\TierPriceFinderPlugin"/>
+    </type>
+    <type name="Magento\SharedCatalog\Model\ResourceModel\ProductItem\Price\PriceProcessor">
+        <plugin name="ddg_b2b_shared_catalog_price_processor_plugin"
+                type="Dotdigitalgroup\B2b\Plugin\SharedCatalogPriceProcessorPlugin"/>
+    </type>
+    <type name="Magento\SharedCatalog\Model\ResourceModel\ProductItem\Price\Consumer">
+        <plugin name="ddg_b2b_shared_catalog_price_consumer_plugin"
+                type="Dotdigitalgroup\B2b\Plugin\SharedCatalogPriceConsumerPlugin"/>
+    </type>
+    <type name="Magento\SharedCatalog\Controller\Adminhtml\SharedCatalog\Configure\Save">
+        <plugin name="ddg_b2b_shared_catalog_save_configuration_plugin"
+                type="Dotdigitalgroup\B2b\Plugin\SharedCatalogSaveConfigurationPlugin"/>
+    </type>
+    <type name="Magento\NegotiableQuote\Model\NegotiableQuoteRepository">
+        <plugin name="ddg_b2b_store_negotiable_quote_repository_plugin"
+                type="Dotdigitalgroup\B2b\Plugin\NegotiableQuotePlugin"/>
+    </type>
+    <type name="Dotdigitalgroup\Email\Setup\Install\DataMigrationTypeProvider">
+        <plugin name="ddg_b2b_data_migration_type_provider_plugin"
+                type="Dotdigitalgroup\B2b\Plugin\DataMigrationTypeProviderPlugin"/>
+    </type>
+    <type name="Dotdigitalgroup\Email\Console\Command\Provider\SyncProvider">
+        <plugin name="ddg_b2b_sync_provider_plugin"
+                type="Dotdigitalgroup\B2b\Plugin\SyncProviderPlugin"/>
+    </type>
+    <type name="Magento\SharedCatalog\Model\SharedCatalogBuilder">
+        <plugin name="ddg_b2b_shared_catalog_builder_plugin"
+                type="Dotdigitalgroup\B2b\Plugin\SharedCatalogBuilderPlugin"/>
+    </type>
+    <type name="Magento\SharedCatalog\Model\Repository">
+        <plugin name="ddg_b2b_shared_catalog_repository_plugin"
+                type="Dotdigitalgroup\B2b\Plugin\SharedCatalogUpdatePlugin"/>
+    </type>
+    <type name="Magento\SharedCatalog\Controller\Adminhtml\SharedCatalog\Company\Assign">
+        <plugin name="ddg_b2b_shared_catalog_company_assign_plugin"
+                type="Dotdigitalgroup\B2b\Plugin\SharedCatalogCompanyAssignPlugin"/>
+    </type>
+    <type name="Dotdigitalgroup\Email\Model\Sync\Importer\ImporterQueueManager">
+        <plugin name="ddg_b2b_importer_queue_manager_plugin"
+                type="Dotdigitalgroup\B2b\Plugin\ImporterQueueManagerPlugin"/>
+    </type>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="b2b_quote_report_grid_data_source" xsi:type="string">Dotdigitalgroup\B2b\Ui\Model\ResourceModel\NegotiableQuote\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <preference for="Dotdigitalgroup\B2b\Api\NegotiableQuoteRepositoryInterface" type="Dotdigitalgroup\B2b\Model\NegotiableQuoteRepository" />
+    <preference for="Dotdigitalgroup\B2b\Api\Data\NegotiableQuoteInterface" type="Dotdigitalgroup\B2b\Model\NegotiableQuote" />
+</config>

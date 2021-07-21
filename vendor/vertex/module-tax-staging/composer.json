@@ -1,0 +1,44 @@
+{
+    "name": "vertex/module-tax-staging",
+    "description": "Vertex Tax Staging - Features related to Magento content staging added to Vertex_Tax",
+    "type": "magento2-module",
+    "license": "proprietary",
+    "version": "1.0.0",
+    "require": {
+        "php": "^7.1",
+        "magento/framework": "^100|^101|^102|^103",
+        "magento/module-store": "^100|^101",
+        "magento/module-catalog": "^100|^101|^102|^103|^104",
+        "magento/module-catalog-staging": "^100|^101|^102|^103|^104",
+        "vertex/module-tax": "4.2.0"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.magento.com/"
+        }
+    ],
+    "require-dev": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.6.2",
+        "magento/magento-coding-standard": "^5.0",
+        "roave/security-advisories": "dev-master"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Vertex\\TaxStaging\\": ""
+        }
+    },
+    "archive": {
+        "exclude": [
+            ".github/",
+            "composer.lock",
+            "phpcs.xml",
+            "vendor/",
+            ".git/",
+            ".gitignore"
+        ]
+    }
+}

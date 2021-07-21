@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/topology.xsd">
+    <exchange name="purchaseordertoorder" type="topic" connection="db">
+        <binding id="purchaseordertoorder" topic="purchaseorder.toorder" destinationType="queue" destination="purchaseordertoorder"/>
+    </exchange>
+    <exchange name="purchaseordertransemail" type="topic" connection="db">
+        <binding id="purchaseordertransemail" topic="purchaseorder.transactional.email" destinationType="queue" destination="purchaseordertransemail"/>
+    </exchange>
+</config>

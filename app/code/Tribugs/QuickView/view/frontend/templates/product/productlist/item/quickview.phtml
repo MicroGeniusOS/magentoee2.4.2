@@ -1,0 +1,38 @@
+
+<style>
+#quickViewContainer<?php /* @noEscape */ echo $block->getProduct()->getId() ?> {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.modals-wrapper .modal-popup .modal-inner-wrap {
+    width: 75%;
+    height: 90%;
+}
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+</style>
+
+<?php if($block->checkEnable()){ ?>
+<?php /** @var Magento\Catalog\Block\Product\ProductList\Item\Block $block */ ?>
+<button type="button"
+        id="quickViewButton<?php /* @noEscape */ echo $block->getProduct()->getId() ?>"
+        class="button-quickview"
+        data-mage-init='{ "Tribugs_QuickView/js/product/productlist/item/quickview": { } }'
+        data-id="<?php /* @noEscape */ echo $block->getProduct()->getId() ?>"
+        data-url="<?php /* @noEscape */ echo $block->getProductUrl($block->getProduct()) ?>">
+        <?php /* @escapeNotVerified */ echo __($block->getButtonText()) ?>
+    <?php /* @noEscape */ //echo __('Quick view') ?>
+</button>
+<div id="quickViewContainer<?php /* @noEscape */ echo $block->getProduct()->getId() ?>"></div>
+<?php } ?>

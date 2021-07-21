@@ -1,0 +1,13 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1626852635;s:6:"expire";i:1626939035;s:4:"tags";s:46:"9de_BLOCK_HTML,9de_CAT_P_14,9de_CAT_P,9de_MAGE";}
+a:2:{s:8:"policies";a:2:{i:0;a:3:{s:2:"id";s:10:"script-src";s:5:"hosts";a:0:{}s:6:"hashes";a:17:{s:44:"/eM+m+aGUFTvzAv4QmnzCba2/2vKp1tJ3Ce5J4CXlF8=";s:6:"sha256";s:44:"48sb4Je7XoTlJimO7pm/+fwXo5BBI6oU4Vci+QqK2/I=";s:6:"sha256";s:44:"9N89WMndeXJQQmez3zcXupuWhb0jRtPuHYgRtBa1Cjo=";s:6:"sha256";s:44:"HUjaEs6gPI/8f06cL8Wy1zR3vaPjSDAYb+YL5IRBsf4=";s:6:"sha256";s:44:"t7Ayxjhaybb2Rjt2nxiWs7jozwL7xrodOIG0IcyQ4/I=";s:6:"sha256";s:44:"KH2WIC+f4uTXSDphJkQdiN43SobsCZo26sozaU5VZOQ=";s:6:"sha256";s:44:"N2+OFgPvIZkd0W70/iHf0mzvgrmnAJ+SRP+H6cOpBmw=";s:6:"sha256";s:44:"aFKdurgKHhhS+qVAjMTIqYNYNGt8mx7lYipPRd4885k=";s:6:"sha256";s:44:"Op1KinttWHBduPtU4e/5oW0G1CdzgIWWPrB3NDAkWk8=";s:6:"sha256";s:44:"8yHN/xGdHRTfQ5Cdm+ljq8zspvpW7CGsO8BK+0vAL3M=";s:6:"sha256";s:44:"TzM2ON/lUOnBU45b912SSzwqNfFsNPG7STjkh+lk6y4=";s:6:"sha256";s:44:"+10rYzwjPMVHinMjRgkORL9/mnP2cJN5E3ZbxaooP60=";s:6:"sha256";s:44:"+SRkzytTwTLmU/atTzdmxRfS+7w7IaAsU+jskdIuzrc=";s:6:"sha256";s:44:"7sycDGwlf2K2irvYfAl8KpxJvfRIVL+I9NWN2yBGaDo=";s:6:"sha256";s:44:"NKVyad1GW8Qn7e5DrjXPfvYd6Fz/Nttdz9hkEdbF49U=";s:6:"sha256";s:44:"T9SJuXlFs7TJu2zF1kYDD/z22q1EoeQMJ8M/gHK5BDE=";s:6:"sha256";s:44:"uWyAVP1e0LzswXb7ONHf4tlGPGJ36jEbDkFptFRw4gg=";s:6:"sha256";}}i:1;a:3:{s:2:"id";s:9:"style-src";s:5:"hosts";a:0:{}s:6:"hashes";a:6:{s:44:"RfaxDIf6n3M+UbmfEcLdJsL+VlDOWWtd50glrEh1Vow=";s:6:"sha256";s:44:"sUwCoqvMDzMmpe32p9Q+SQ4P2M+Kn2oDU52lKIROZZY=";s:6:"sha256";s:44:"RLHgn5SStcGWyBZsDK2xYR0gOzWrn21vQfCv+O3o/sU=";s:6:"sha256";s:44:"Ab1EejFIaji1tfrEE1xhSVv1KWW5KG9sWU/1G65GFKE=";s:6:"sha256";s:44:"PB8zgWhZSmw/BLR3d4fVXPIlWzS+yCxDQtutebLHxYY=";s:6:"sha256";s:44:"i+hvfBqQRcPVe0yj0Z2DZoMppLcXBDlJoU2mDuXMjP8=";s:6:"sha256";}}}s:4:"html";s:426:"<div class="price-box price-final_price" data-role="priceBox" data-product-id="14" data-price-box="product-id-14">
+    
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+        <span  id="old-price-14-widget-product-grid"                data-price-amount="45"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">$45.00</span></span>
+        </span>
+
+</div>";}

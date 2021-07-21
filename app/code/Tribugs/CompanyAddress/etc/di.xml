@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+ 
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">   
+    <preference for="Magento\Quote\Model\QuoteAddressValidator" type="Tribugs\CompanyAddress\Model\Rewrite\QuoteAddressValidator" />
+    
+    <preference for="Magento\Customer\Model\Address\Validator\Customer" type="Tribugs\CompanyAddress\Model\Rewrite\Customer" />
+    
+    <type name="Magento\Checkout\Model\DefaultConfigProvider">
+        <plugin name="TribugsCompanyAddressModelDefaultConfigProvider" type="Tribugs\CompanyAddress\Plugin\DefaultConfigProvider" sortOrder="10"/>
+    </type> 
+</config>
+
+
+
+

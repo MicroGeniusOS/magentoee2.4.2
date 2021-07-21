@@ -1,0 +1,1 @@
+"Fatal Error: 'Allowed memory size of 792723456 bytes exhausted (tried to allocate 534777856 bytes)' in '\/var\/www\/html\/magento-ee\/vendor\/magento\/module-checkout\/Model\/PaymentInformationManagement.php' on line 171"

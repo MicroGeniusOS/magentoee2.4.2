@@ -1,0 +1,43 @@
+<?php
+namespace Magento\PurchaseOrder\Model\ResourceModel\PurchaseOrder\Grid\Collection;
+
+/**
+ * Interceptor class for @see \Magento\PurchaseOrder\Model\ResourceModel\PurchaseOrder\Grid\Collection
+ */
+class Interceptor extends \Magento\PurchaseOrder\Model\ResourceModel\PurchaseOrder\Grid\Collection implements \Magento\Framework\Interception\InterceptorInterface
+{
+    use \Magento\Framework\Interception\Interceptor;
+
+    public function __construct(\Magento\Company\Model\CompanyContext $companyContext, \Magento\Company\Model\ResourceModel\Customer $customerResource, \Magento\Company\Model\Company\Structure $companyStructure, \Magento\Framework\Data\Collection\EntityFactoryInterface $entityFactory, \Psr\Log\LoggerInterface $logger, \Magento\Framework\Data\Collection\Db\FetchStrategyInterface $fetchStrategy, \Magento\Framework\Event\ManagerInterface $eventManager, \Magento\PurchaseOrder\Model\Config\Source\Status $purchaseOrderStatus, $mainTable = 'purchase_order', $resourceModel = 'Magento\\PurchaseOrder\\Model\\ResourceModel\\PurchaseOrder\\Collection', $filterCurrentCustomer = false)
+    {
+        $this->___init();
+        parent::__construct($companyContext, $customerResource, $companyStructure, $entityFactory, $logger, $fetchStrategy, $eventManager, $purchaseOrderStatus, $mainTable, $resourceModel, $filterCurrentCustomer);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getSelectCountSql()
+    {
+        $pluginInfo = $this->pluginList->getNext($this->subjectType, 'getSelectCountSql');
+        return $pluginInfo ? $this->___callPlugins('getSelectCountSql', func_get_args(), $pluginInfo) : parent::getSelectCountSql();
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function loadWithFilter($printQuery = false, $logQuery = false)
+    {
+        $pluginInfo = $this->pluginList->getNext($this->subjectType, 'loadWithFilter');
+        return $pluginInfo ? $this->___callPlugins('loadWithFilter', func_get_args(), $pluginInfo) : parent::loadWithFilter($printQuery, $logQuery);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getCurPage($displacement = 0)
+    {
+        $pluginInfo = $this->pluginList->getNext($this->subjectType, 'getCurPage');
+        return $pluginInfo ? $this->___callPlugins('getCurPage', func_get_args(), $pluginInfo) : parent::getCurPage($displacement);
+    }
+}
